@@ -1,16 +1,16 @@
-class WorldsBestRestaurants::Scraper
+class Test::Scraper
 
   def get_page
-    Nokogiri::HTML(open("https://www.theworlds50best.com/list/1-50-winners"))
+    Nokogiri::HTML(open("https://www.filmsite.org/bestactor2.html"))
   end
 
-  def scrape_restaurants_index
+  def scrape_actor
      self.get_page.css("div#t1-50 li")
   end
 
-  def make_restaurants
-    scrape_restaurants_index.each do |r|
-      WorldsBestRestaurants::Restaurant.new_from_index_page(r)
+  def make_actor
+    scrape_actor.each do |r|
+      Test::Actor.new(r)
     end
   end
 end
