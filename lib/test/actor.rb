@@ -6,9 +6,9 @@ class Test::Actor
 
   def self.new_from_index_page(r)
     self.new(
-      r.css("div.mainBodyWrapper table tr td:nth-child(1)").text,
-      r.css("div.mainBodyWrapper table tr td:nth-child(2)").text,
-      r.css("div.mainBodyWrapper table tr td:nth-child(3)").text
+      r.css("div#mainBodyWrapper table tr td:nth-child(1)").text,
+      r.css("div#mainBodyWrapper table tr td:nth-child(2)").text,
+      r.css("div#mainBodyWrapper table tr td:nth-child(3)").text
       )
   end
 
