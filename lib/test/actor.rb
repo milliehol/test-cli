@@ -1,22 +1,21 @@
-class WorldsBestRestaurants::Restaurant
+class Test::Actor
 
-  attr_accessor :name, :position, :location, :url, :head_chef, :website_url, :food_style, :best_dish, :contact, :description
+  attr_accessor :year, :name, :movie
 
   @@all = []
 
   def self.new_from_index_page(r)
     self.new(
-      r.css("table tr td").text,
-      r.css("td").text,
-      r.css("td").text
+      r.css("div.mainBodyWrapper table tr td:nth-child(1)").text,
+      r.css("div.mainBodyWrapper table tr td:nth-child(2)").text,
+      r.css("div.mainBodyWrapper table tr td:nth-child(3)").text
       )
   end
 
-  def initialize(name=nil, url=nil, location=nil, position=nil)
+  def initialize(year, name, movie=nil)
+    @year = year
     @name = name
-    @url = url
-    @location = location
-    @position = position
+    @movie = movie
     @@all << self
   end
 
