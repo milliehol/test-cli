@@ -55,11 +55,9 @@ class Test::CLI
     puts ""
   end
 
-  def print_actor_list(from_number)
+  def print_actor_list(actor)
     puts ""
-    puts "---------- Restaurants #{from_number} - #{from_number+9} ----------"
-    puts ""
-    WorldsBestRestaurants::Restaurant.all"
+    Test::Actor.all"
     end
   end
 
