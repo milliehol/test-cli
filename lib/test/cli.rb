@@ -10,7 +10,7 @@ class Test::CLI
 
   def start
     puts ""
-    print_actor_list(actor)
+    print_actor_list
     
     puts ""
     
@@ -38,24 +38,15 @@ class Test::CLI
     end
   end
 
-  def print_restaurant(restaurant)
+  def print_actor_info(actor)
     puts ""
-    puts "----------- #{restaurant.name} - #{restaurant.position} -----------"
+    puts "#{actor.year}"
     puts ""
-    puts "Location:           #{restaurant.location}"
-    puts "Head Chef:          #{restaurant.head_chef}"
-    puts "Style of Food:      #{restaurant.food_style}"
-    puts "Standout Dish:      #{restaurant.best_dish}"
-    puts "Contact:            #{restaurant.contact}"
-    puts "Website:            #{restaurant.website_url}"
-    puts ""
-    puts "---------------Description--------------"
-    puts ""
-    puts "#{restaurant.description}"
+    puts "#{actor.movie}"
     puts ""
   end
 
-  def print_actor_list(actor)
+  def print_actor_list
     puts ""
     Test::Actor.all"
     end
