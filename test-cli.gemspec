@@ -9,9 +9,9 @@ Gem::Specification.new do |spec|
   spec.authors       = ["'Carla Holcomb'"]
   spec.email         = ["'carla.programmer@gmail.com'"]
 
-  spec.summary       = %q{TODO: Write a short summary, because RubyGems requires one.}
-  spec.description   = %q{TODO: Write a longer description or delete this line.}
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.summary       = "Oscar Awards for Best Actor"
+  spec.description   = "Provides the best actors and their characters & movie"
+  spec.homepage      = "https://github.com/milliehol/test-cli/"
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
@@ -38,4 +38,6 @@ Gem::Specification.new do |spec|
 
   spec.add_development_dependency "bundler", "~> 2.0"
   spec.add_development_dependency "rake", "~> 10.0"
+  spec.add_development_dependency "rspec", ">= 0"
+  spec.add_development_dependency "nokogiri", ">= 0"
 end
