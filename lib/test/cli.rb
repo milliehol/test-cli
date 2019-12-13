@@ -46,7 +46,7 @@ class Test::CLI
 
   def print_actor_list
     puts ""
-    Test::Actor.all
+    puts Test::Actor.all
   end
 
 end
