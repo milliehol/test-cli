@@ -46,7 +46,9 @@ class Test::CLI
 
   def print_actor_list
     puts ""
-    puts Test::Actor.all
+    Test::Actor.all.each do |year|
+      puts "#{year}"
+    end
   end
 
 end
