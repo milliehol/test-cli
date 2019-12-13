@@ -1,6 +1,6 @@
 class Test::Actor
 
-  attr_accessor :year, :name, :movie
+  attr_accessor :year, :name, :role
 
   @@all = []
 
@@ -12,10 +12,10 @@ class Test::Actor
       )
   end
 
-  def initialize(year, name, movie=nil)
+  def initialize(year, name, role)
     @year = year
     @name = name
-    @movie = movie
+    @role = role
     @@all << self
   end
 
