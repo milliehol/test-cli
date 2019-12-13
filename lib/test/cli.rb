@@ -1,5 +1,3 @@
-require "test/cli/version"
-
 class Test::CLI
 
   def call
