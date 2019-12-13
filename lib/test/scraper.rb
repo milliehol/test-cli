@@ -8,7 +8,7 @@ class Test::Scraper
      self.get_page.css("div#t1-50 li")
   end
 
-  def make_actor
+  def create_actor
     scrape_actor.each do |r|
       Test::Actor.new(r)
     end
