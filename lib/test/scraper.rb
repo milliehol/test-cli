@@ -8,9 +8,9 @@ class Test::Scraper
     
      self.get_page.css("div#t1-50 li").each do |actor|
        year = actor.css("div#mainBodyWrapper table tr td:nth-child(1)").text,
-       actor2 = actor.css("div#mainBodyWrapper table tr td:nth-child(2)").text,
-       movie = actor.css("div#mainBodyWrapper table tr td:nth-child(3)").text
-       Test::Actor.new(year, actor2, movie)
+       name = actor.css("div#mainBodyWrapper table tr td:nth-child(2)").text,
+       role = actor.css("div#mainBodyWrapper table tr td:nth-child(3)").text
+       Test::Actor.new(year, name, role)
        end
   end
 
