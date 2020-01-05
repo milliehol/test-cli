@@ -4,13 +4,13 @@ class Test::Actor
 
   @@all = []
 
-  def self.new(r)
-    self.new(
-      r.css("div#mainBodyWrapper table tr td:nth-child(1)").text,
-      r.css("div#mainBodyWrapper table tr td:nth-child(2)").text,
-      r.css("div#mainBodyWrapper table tr td:nth-child(3)").text
-      )
-  end
+  #def self.new(r)
+    #self.new(
+      #r.css("div#mainBodyWrapper table tr td:nth-child(1)").text,
+      #r.css("div#mainBodyWrapper table tr td:nth-child(2)").text,
+      #r.css("div#mainBodyWrapper table tr td:nth-child(3)").text
+      #)
+  #end
 
   def initialize(year, name, role)
     @year = year
