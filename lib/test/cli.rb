@@ -1,7 +1,7 @@
 class Test::CLI
 
   def call
-    Test::Scraper.new.create_actor
+    Test::Scraper.create_actor
     puts "Welcome to the Oscars Awards"
     start
   end
