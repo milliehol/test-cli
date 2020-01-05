@@ -6,7 +6,7 @@ class Test::Scraper
 
   def self.create_actor
     
-     self.get_page.css("div#t1-50 li").each do |actor|
+     get_page.css("div#t1-50 li").each do |actor|
        year = actor.css("div#mainBodyWrapper table tr td:nth-child(1)").text,
        name = actor.css("div#mainBodyWrapper table tr td:nth-child(2)").text,
        role = actor.css("div#mainBodyWrapper table tr td:nth-child(3)").text
