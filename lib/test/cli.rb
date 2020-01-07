@@ -38,9 +38,9 @@ class Test::CLI
 
   def print_actor_info(actor)
     puts ""
-    puts "#{actor.year}"
+    puts "#{actor.name}"
     puts ""
-    puts "#{actor.movie}"
+    puts "#{actor.role}"
     puts ""
   end
 
